@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212024;
+    font-family: monospace;
+}
+
+#about-main{
+    display: flex;
+}
+label.logo {
+    font-family: 'Vollkorn SC', serif;
+    color: #1b9bff;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px #1b9bff, 0 0 5px #1b9bff;
+}
+
+/* header starts */
+header {
+    background-color: #212024;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    max-width: 60%;
+}
+
+header nav a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 10px 15px;
+    flex: 1 0 auto;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+header nav a span {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+/* header nav a.transform, */
+header nav a:hover {
+    background: #1b9bff;
+    color: #212024;
+    transition: 0.5s;
+
+}
+
+/* header ends */
+
+
+/*center name start's*/
+#home {
+    position: relative;
+}
+
+.contenar {
+    font-family: 'Vollkorn SC', serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.contenar p {
+    color: white;
+}
+
+.contenar h1 {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.dot {
+    height: 22px;
+    width: 22px;
+    background-color: #1b9bff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.intro {
+    color: white;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.one {
+    font-size: 70px;
+    display: inline-block;
+}
+
+.one span {
+    color: #1b9bff;
+}
+
+/*center name end*/
+/* center name and resume start */
+.get_contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 10px 15px;
+    display: inline-flex;
+    align-items: center;
+    border: 2.5px solid #1b9bff;
+    border-radius: 10% / 50%;
+}
+
+.get_contact span {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.get_contact {
+    position: absolute;
+    top: 72%;
+    left: 15.7%;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+
+.get_contact a:hover {
+    background: #1b9bff;
+    color: #212024;
+    transition: 0.5s;
+}
+
+/* center name and resume end */
+
+/* scroll-down animatein */
+.mouse {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-down {
+    width: 50px;
+    height: 80px;
+    border-radius: 25px;
+    background: transparent;
+    border: 4px solid #1b9bff;
+    overflow: hidden;
+}
+
+.scroll-down::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #1b9bff;
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, 10px);
+    animation: animate 1s linear infinite;
+}
+
+.scroll-down::after {
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    height: 15px;
+    border-radius: 50%;
+    background: #1b9bff;
+    left: 50%;
+    top: 5px;
+    transform: translate(-50%, 0);
+    border-radius: 3px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, 20px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translate(-50%, 50px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 60px);
+        opacity: 0;
+    }
+}
+
+section {
+    min-height: 100vh;
+}
+
+/* about start */
+
+.about-main .arrow {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.about-main .arrow span {
+    /* color:#fddb05 ; */
+    color: #1b9bff;
+    text-shadow: 1px 1px 1px #1b9bff;
+    text-align: center;
+}
+.about-flex-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: stretch;
+    justify-content: center;
+}
+.two-container{
+    display: flex;
+    justify-content: center;
+}
+.about-right {
+    display: flex;
+    justify-content: center;
+}
+.about-right p{
+    max-width: 75%;
+    font-size: 15px;
+}
+
+/* about end */
